@@ -50,7 +50,7 @@
       <Mode/>
     </Variable>
     <Variable>
-      <Value>Prasad@2020</Value>
+      <Value>Password</Value>
       <Name>MYSQL_ROOT_PASSWORD</Name>
       <Mode/>
     </Variable>
