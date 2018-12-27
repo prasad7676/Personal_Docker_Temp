@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>MQTT</Name>
+  <Repository>eclipse-mosquitto</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview/>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon/>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1545869494</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description/>
+  <Networking>
+    <Mode>host</Mode>
+    <Publish/>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/MQTT/</HostDir>
+      <ContainerDir>/mosquitto/data</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/MQTT/</HostDir>
+      <ContainerDir>/mosquitto/config/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment/>
+  <Labels/>
+  <Config Name="Data" Target="/mosquitto/data" Default="" Mode="rw" Description="Container Path: /mosquitto/data" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/MQTT/</Config>
+  <Config Name="Config" Target="/mosquitto/config/" Default="/mnt/user/appdata/MQTT/" Mode="rw" Description="Container Path: /mosquitto/config/" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/MQTT/</Config>
+</Container>
